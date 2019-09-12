@@ -101,6 +101,15 @@ header #content ul li a
     flex-flow: column nowrap;
 }
 
+#contact
+{
+    display: flex;
+
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+
 #contact #content
 {
     display: flex;
