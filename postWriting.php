@@ -30,9 +30,9 @@
 <body>
     <a href="./admin.php">Вернуться в админку</a>
     <form action="" method="POST">
-        <input type="input" name="post_title" placeholder="Заголовок поста">
-        <input type="input" name="post_tags" placeholder="Теги поста">
-        <textarea name="post_text" placeholder="Текст поста"></textarea>
+        <input type="input" name="post_title" placeholder="Заголовок поста" required>
+        <input type="input" name="post_tags" placeholder="Теги поста" required>
+        <textarea name="post_text" placeholder="Текст поста" required></textarea>
         <input type="submit" name="post_send" value="Послать пост">
     </form>
 </body>

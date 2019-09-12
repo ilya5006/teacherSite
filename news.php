@@ -10,6 +10,7 @@
     <title>Новости</title>
 </head>
 <body>
+    <a href="./index.html">Вернуться на главную</a>
     <div id="news">
         <?
             $query = "SELECT * FROM posts";
@@ -17,8 +18,6 @@
             
             while ($post = mysqli_fetch_assoc($queryResult))
             {
-                list($postId, $postTitle, $postTags, $postText) = $post;
-
                 $postTitle = $post['post_title'];
                 $postTags = $post['post_tags'];
                 $postText = $post['post_text'];
