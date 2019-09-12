@@ -62,7 +62,7 @@ header #content .nav .logo
     text-transform: uppercase;
 }
 
-header #content .nav a
+header #content .nav a, footer #content a
 {
     font-weight: bold;
 
@@ -73,7 +73,7 @@ header #content .nav a
     color: #FFFFFF;;
 }
 
-header #content .nav a:not(.logo)::after
+header #content .nav a:not(.logo)::after, footer #content a::after
 {
     position: absolute;
     bottom: 0;
@@ -89,7 +89,7 @@ header #content .nav a:not(.logo)::after
     background-color: #FFFFFF;
 }
 
-header #content .nav a:hover::after
+header #content .nav a:hover::after, footer #content a:hover::after
 {
     transform: scale(1);
 }
@@ -193,6 +193,138 @@ header #content .text p
     flex-grow: 1;
 }
 
+#block_three #content
+{
+    display: flex;
+
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+#block_three #content h2
+{
+    font-size: 58px;
+
+    margin-bottom: 25px;
+
+    text-align: center;
+}
+
+#block_three #content .posts
+{
+    display: flex;
+
+    align-self: center;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#block_three #content .post
+{
+    width: 300px;
+    margin: 25px;
+    padding: 25px;
+
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+    align-self: flex-start;
+    flex-grow: 1;
+}
+
+#block_three #content .post .post_title
+{
+    font-size: 18px;
+    font-weight: bold;
+
+    margin: 0 0 10px 0;
+
+    text-align: center;
+}
+
+#block_three #content .post .post_text
+{
+    font-size: 16px;
+
+    margin: 10px 0;
+}
+
+#block_three #content .post .post_tags
+{
+    font-size: 14px;
+
+    display: inline-block;
+
+    margin: 10px 5px 0 0;
+    padding: 3px 9px;
+
+    text-align: center;
+
+    border: 1px solid black;
+}
+
+#block_three #content .post hr
+{
+    opacity: 0.3;
+}
+
+#block_three #content button
+{
+    font-size: 18px;
+
+    margin-top: 45px;
+    padding: 15px 45px;
+
+    cursor: pointer;
+    transition: 1s all;
+
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    background: url("../img/background_1.jpg");
+}
+
+#block_three #content button:hover
+{
+    transform: scale(1.05);
+}
+
+footer
+{
+    background-image: url("../img/background_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer #content
+{
+    display: flex;
+
+    padding: 15px 50px;
+
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+footer #content a, footer #content p
+{
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+footer #content p
+{
+    opacity: 0.4;
+}
+
+footer #content a
+{
+    position: relative;
+
+    margin: 10px 15px 10px 15px;
+    padding: 5px 15px;
+}
+
 @media screen and (max-width: 700px)
 {
     #content
@@ -240,12 +372,22 @@ header #content .text p
     {
         font-size: 23px;
     }
+
+    #block_three #content
+    {
+        padding: 45px 15px;
+    }
+    #block_three #content .post
+    {
+        width: 100%;
+        margin: 5px;
+    }
 }
 
 @media screen and (max-width: 485px)
 {
-    #contact form p, #contact form input, #contact form textarea
+    footer #content
     {
-        width: 100%;
+        flex-flow: column nowrap;
     }
 }
