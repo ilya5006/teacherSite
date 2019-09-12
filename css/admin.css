@@ -12,27 +12,30 @@ header
     width: 100%;
 }
 
+header a
+{
+    float: left;
+    height: 100%;
+}
+
 header h1
 {
     padding: 10px;
-    text-align: center;
     font-size: 50px;
+
+    text-align: center;
 }
 
-a
+.function
 {
     display: block;
     text-align: center;
-
+    background-color: #d2b9b9; 
     text-decoration: none;
 
     border-bottom: 1px solid black;
-
     padding: 100px;
-    background-color: #d2b9b9;
-
     font-size: 30px;
-    
     transition: 1s;
 }
 
