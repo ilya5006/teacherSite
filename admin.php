@@ -1,3 +1,11 @@
+<?
+    session_start();
+    if (!$_SESSION['isLogin'])
+    {
+        header('Location: index.html');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
