@@ -18,8 +18,9 @@
     <header>
         <h1>Панель администратора</h1>
     </header>
-    <a href="./postWriting.php">Написать пост</a>
-    <a href="./index.html">Вернуться на главную</a>
+    
+    <a class="function" href="./index.html">Вернуться на главную</a>
+    <a class="function" href="./postWriting.php">Написать пост</a>
 
 </body>
 </html>
