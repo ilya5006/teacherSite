@@ -14,6 +14,10 @@
     <title>Написать пост</title>
 </head>
 <body>
-    
+    <form>
+        <input type="input" name="post_name" placeholder="Заголовок поста">
+        <input type="input" name="post_tags" placeholder="Теги поста">
+        <textarea name="post_text" placeholder="Текст поста">
+    </form>
 </body>
 </html>
