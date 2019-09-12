@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body, #wrapper
+{
+    min-height: 100%;
+}
+
+body
+{
+    font-family: "Rubik", sans-serif;
+
+    min-width: 320px;
+}
+
+
+#content
+{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 50px;
+
+    flex-grow: 1;
+}
+
+header
+{
+    display: flex;
+
+    min-height: 550px;
+
+    background-image: url("../img/background_2.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+}
+
+header #content
+{
+    display: flex;
+
+    flex-flow: column nowrap;
+}
+header #content .nav
+{
+    display: flex;
+
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+header #content .nav .logo
+{
+    margin-bottom: 15px;
+
+    text-transform: uppercase;
+}
+
+header #content .nav a
+{
+    font-weight: bold;
+
+    position: relative;
+
+    text-decoration: none;
+
+    color: #FFFFFF;;
+}
+
+header #content .nav a:not(.logo)::after
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    content: "";
+    transition: 0.3s all;
+    transform: scale(0);
+
+    background-color: #FFFFFF;
+}
+
+header #content .nav a:hover::after
+{
+    transform: scale(1);
+}
+
+header #content .nav ul
+{
+    display: flex;
+
+    list-style-type: none;
+
+    flex-flow: row nowrap;
+}
+
+header #content .nav ul li a
+{
+    margin: 0 15px;
+    padding: 5px 15px;
+
+    text-align: center;
+}
+
+header #content .text
+{
+    display: flex;
+
+    color: #FFFFFF;
+
+    align-content: center;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+header #content .text h1
+{
+    font-size: 66px;
+}
+
+header #content .text p
+{
+    font-size: 26px;
+}
+
+@media screen and (max-width: 700px)
+{
+    #content
+    {
+        padding: 25px;
+    }
+
+    header #content .nav p
+    {
+        margin-bottom: 25px;
+    }
+
+    header #content .nav
+    {
+        align-items: center;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    header #content .nav ul li
+    {
+        display: flex;
+
+        align-self: center;
+        flex-grow: 1;
+        justify-content: center;
+    }
+    header #content .nav ul li a
+    {
+        margin: unset;
+    }
+}
+
+@media screen and (max-width: 485px)
+{
+    #contact form p, #contact form input, #contact form textarea
+    {
+        width: 100%;
+    }
+}
