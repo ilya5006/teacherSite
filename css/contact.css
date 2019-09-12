@@ -36,7 +36,7 @@ header #content
 
 header #content .logo
 {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 
     text-transform: uppercase;
 }
@@ -101,7 +101,7 @@ header #content ul li a
     flex-flow: column nowrap;
 }
 
-#contact
+#contact #content
 {
     display: flex;
 
@@ -110,17 +110,17 @@ header #content ul li a
     justify-content: center;
 }
 
-#contact, .info, #contact form
+#contact #content, .info, #contact #content form
 {
     flex-grow: 1;
 }
 
-.info, #contact form
+.info, #contact #content form
 {
     padding: 15px 35px;
 }
 
-#contact form
+#contact #content form
 {
     display: flex;
 
@@ -131,7 +131,7 @@ header #content ul li a
     justify-content: center;
 }
 
-#contact form input
+#contact #content form input
 {
     width: 350px;
     min-height: 55px;
@@ -148,7 +148,7 @@ header #content ul li a
     background-color: rgba(255,255,255,0.0);
 }
 
-#contact form input[type=submit]
+#contact #content form input[type=submit]
 {
     cursor: pointer;
 
@@ -157,17 +157,17 @@ header #content ul li a
     background-color: rgba(255,255,255,0.2);
 }
 
-#contact form input[type=submit]:hover
+#contact #content form input[type=submit]:hover
 {
     transform: scale(1.05);
 }
 
-#contact form input:hover, #contact form textarea:hover
+#contact #content form input:hover, #contact form textarea:hover
 {
     background-color: rgba(255,255,255,0.2);
 }
 
-#contact form textarea
+#contact #content form textarea
 {
     font-family: "Rubik", sans-serif;
 
@@ -189,7 +189,7 @@ header #content ul li a
     background-color: rgba(255,255,255,0.0);
 }
 
-#contact form p, #contact form input, #contact form textarea
+#contact #content form p, #contact #content form input, #contact #content form textarea
 {
     font-size: 19px;
 
@@ -198,14 +198,14 @@ header #content ul li a
     color: white;
 }
 
-#contact form p
+#contact #content form p
 {
     font-size: 38px;
 
     text-align: center;
 }
 
-#contact .info
+#contact #content .info
 {
     display: flex;
 
@@ -214,7 +214,7 @@ header #content ul li a
     flex-flow: column nowrap;
 }
 
-#contact .info .photo
+#contact #content .info .photo
 {
     width: 150px;
     height: 150px;
@@ -226,7 +226,7 @@ header #content ul li a
     background-size: cover;
 }
 
-#contact .info p
+#contact #content .info p
 {
     font-size: 18px;
 
@@ -242,7 +242,7 @@ header #content ul li a
 {
     #content
     {
-        padding: 25px;
+        padding: 45px 25px;
     }
 
     header #content p
@@ -270,11 +270,11 @@ header #content ul li a
         margin: unset;
     }
 
-    #contact
+    #contact #content
     {
         flex-flow: column nowrap;
     }
-    #contact form
+    #contact #content form
     {
         margin-top: 25px;
         padding-top: 65px;
@@ -286,7 +286,11 @@ header #content ul li a
 
 @media screen and (max-width: 485px)
 {
-    #contact form p, #contact form input, #contact form textarea
+    #content
+    {
+        padding: 45px 0;
+    }
+    #contact #content form p, #contact #content form input, #contact #content form textarea
     {
         width: 100%;
     }
