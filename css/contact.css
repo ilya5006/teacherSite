@@ -38,7 +38,13 @@ header #content .logo
 {
     margin-bottom: 25px;
 
+    transition: 0.3s all;
     text-transform: uppercase;
+}
+
+header #content .logo:hover
+{
+    transform: scale(1.05);
 }
 
 header #content a
@@ -66,6 +72,7 @@ header #content a:not(.logo)::after
     transform: scale(0);
 
     background-color: #FFFFFF;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);
 }
 
 header #content a:hover::after
@@ -88,6 +95,11 @@ header #content ul li a
     padding: 5px 15px;
 
     text-align: center;
+}
+
+header #content ul li a, header #content .logo, header #content .text h1, header #content .text p, #contact #content form, #contact #content .info p
+{
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);
 }
 
 #wrapper
@@ -164,16 +176,20 @@ header #content ul li a
     border: 0;
     border-radius: 15px;
     background-color: rgba(255,255,255,0.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 #contact #content form input[type=submit]:hover
 {
     transform: scale(1.05);
+
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 #contact #content form input:hover, #contact #content form textarea:hover
 {
     background-color: rgba(255,255,255,0.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 #contact #content form textarea
@@ -233,6 +249,7 @@ header #content ul li a
     background-image: url("../img/avatar.jpg");
     background-position: center;
     background-size: cover;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 #contact #content .info p

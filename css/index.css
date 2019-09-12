@@ -59,7 +59,13 @@ header #content .nav .logo
 {
     margin-bottom: 25px;
 
+    transition: 0.3s all;
     text-transform: uppercase;
+}
+
+header #content .nav .logo:hover
+{
+    transform: scale(1.05);
 }
 
 header #content .nav a, footer #content a
@@ -87,6 +93,7 @@ header #content .nav a:not(.logo)::after, footer #content a::after
     transform: scale(0);
 
     background-color: #FFFFFF;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);
 }
 
 header #content .nav a:hover::after, footer #content a:hover::after
@@ -132,6 +139,11 @@ header #content .text h1
 header #content .text p
 {
     font-size: 26px;
+}
+
+header #content .nav ul li a, header #content .nav .logo, header #content .text h1, header #content .text p, footer #content a, footer #content p
+{
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);
 }
 
 #block_one #content
@@ -189,6 +201,7 @@ header #content .text p
     background-image: url("../img/temp_bumaga.jpg");
     background-repeat: no-repeat;
     background-size: contain;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
     flex-grow: 1;
 }
@@ -282,11 +295,14 @@ header #content .text p
     border: 0;
     border-radius: 15px;
     background: url("../img/background_1.jpg");
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 #block_three #content a:hover
 {
     transform: scale(1.05);
+
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 footer
