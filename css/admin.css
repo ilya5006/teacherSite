@@ -3,4 +3,41 @@
     margin: 0px;
     padding: 0px;
     font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
+}
+
+header
+{
+    background-color: #d0d0d0;
+    width: 100%;
+}
+
+header h1
+{
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
+a
+{
+    display: block;
+    text-align: center;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid black;
+
+    padding: 100px;
+    background-color: #d2b9b9;
+
+    font-size: 30px;
+    
+    transition: 1s;
+}
+
+a:hover
+{
+    transition: 1s;
+    background-color: #db6c6c;
 }

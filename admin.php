@@ -15,7 +15,10 @@
     <title>Панель администратора</title>
 </head>
 <body>
-    <a href="./postWriting.php">Написать пост</a><br>
+    <header>
+        <h1>Панель администратора</h1>
+    </header>
+    <a href="./postWriting.php">Написать пост</a>
     <a href="./index.html">Вернуться на главную</a>
 
 </body>
