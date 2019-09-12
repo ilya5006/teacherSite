@@ -267,7 +267,7 @@ header #content .text p
     opacity: 0.3;
 }
 
-#block_three #content button
+#block_three #content a
 {
     font-size: 18px;
 
@@ -276,6 +276,7 @@ header #content .text p
 
     cursor: pointer;
     transition: 1s all;
+    text-decoration: none;
 
     color: white;
     border: 0;
@@ -283,7 +284,7 @@ header #content .text p
     background: url("../img/background_1.jpg");
 }
 
-#block_three #content button:hover
+#block_three #content a:hover
 {
     transform: scale(1.05);
 }
