@@ -134,6 +134,31 @@ header #content .text p
     font-size: 26px;
 }
 
+#block_one #content
+{
+    display: flex;
+
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+#block_one #content h2
+{
+    font-size: 58px;
+
+    margin-bottom: 25px;
+
+    text-align: center;
+}
+
+#block_one #content ul li
+{
+    font-size: 28px;
+
+    text-align: center;
+}
+
 @media screen and (max-width: 700px)
 {
     #content
@@ -172,6 +197,14 @@ header #content .text p
     header #content .text h1
     {
         font-size: 43px;
+    }
+    #block_one #content h2
+    {
+        font-size: 38px;
+    }
+    #block_one #content ul li
+    {
+        font-size: 23px;
     }
 }
 
