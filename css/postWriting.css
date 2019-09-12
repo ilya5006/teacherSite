@@ -1,5 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+
 *
 {
     margin: 0px;
     padding: 0px;
+    font-family: "Rubik", sans-serif;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0px auto;
+}
+
+input, textarea
+{
+    font-size: 25px;
+    padding: 5px;
 }
