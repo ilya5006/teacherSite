@@ -4,5 +4,13 @@
 {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
     font-family: "Rubik", sans-serif;
+}
+
+#post
+{
+    border: 1px solid black;
+    width: 80%;
+    margin: 0px auto;
 }
