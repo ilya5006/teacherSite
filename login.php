@@ -26,12 +26,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
     <title>Вход</title>
 </head>
 <body>
     <form action="" method="POST">
-        <input type="input" name="login">
-        <input type="input" name="password">
+        <input type="input" name="login" placeholder="Логин">
+        <input type="input" name="password" placeholder="Пароль">
         <input type="submit" name="submit" value="ВОЙТИ">
     </form>
 </body>
