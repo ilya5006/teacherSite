@@ -1,21 +1,9 @@
 <?
-    require_once './php/connection.php';
-
     session_start();
 
     if (!$_SESSION['isLogin'])
     {
-        header('Location: index.html');
-    }
-
-    if (isset($_POST['post_send']))
-    {
-        $postTitle = $_POST['post_title'];
-        $postTags = $_POST['post_tags'];
-        $postText = $_POST['post_text'];
-        $query = "INSERT INTO posts VALUES (NULL, '$postTitle', '$postTags', '$postText')";
-        mysqli_query($link, $query);
-        echo '<p>Пост отправлен</p>';
+        header('Location: index.php');
     }
 ?>
 
@@ -29,7 +17,7 @@
 </head>
 <body>
     <a href="./admin.php">Вернуться в админку</a>
-    <form action="" method="POST">
+    <form action="./php/sendPost.php" method="POST">
         <input type="input" name="post_title" placeholder="Заголовок поста" required>
         <input type="input" name="post_tags" placeholder="Теги поста" required>
         <textarea name="post_text" placeholder="Текст поста" required></textarea>

@@ -12,9 +12,9 @@
     <div id="wrapper">
         <header>
             <div id="content">
-                <a href="index.html" class="logo">Овчинников</a>
+                <a href="index.php" class="logo">Овчинников</a>
                 <ul>
-                    <li><a href="index.html">Обо мне</a></li>
+                    <li><a href="index.php">Обо мне</a></li>
                     <li><a href="news.php">Блог</a></li>
                     <li><a href="contact.html">Контакты</a></li>
                 </ul>
@@ -30,11 +30,11 @@
                     <p>ЕЩЕ ЧТО-ТО</p>
                 </div>
 
-                <form action="" method="POST">
+                <form action="./php/sendMessage.php" method="POST">
                     <p> Отправить сообщение</p>
-                    <input type="text" placeholder="Имя" required>
-                    <input type="email" placeholder="Почта" required>
-                    <textarea placeholder="Ваше сообщение" required></textarea>
+                    <input type="text" placeholder="Имя" name="sender_name" required>
+                    <input type="email" placeholder="Почта" name="sender_mail" required>
+                    <textarea placeholder="Ваше сообщение" name="sender_text" required></textarea>
                     <input type="submit" value="ОТПРАВИТЬ" required>
                 </form>
             </div>

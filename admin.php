@@ -2,7 +2,7 @@
     session_start();
     if (!$_SESSION['isLogin'])
     {
-        header('Location: index.html');
+        header('Location: index.php');
     }
 ?>
 
@@ -19,7 +19,7 @@
         <h1>Панель администратора</h1>
     </header>
     
-    <a class="function" href="./index.html">Вернуться на главную</a>
+    <a class="function" href="./index.php">Вернуться на главную</a>
     <a class="function" href="./postWriting.php">Написать пост</a>
 
 </body>

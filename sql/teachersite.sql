@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Сен 12 2019 г., 21:55
+-- Время создания: Сен 13 2019 г., 09:47
 -- Версия сервера: 8.0.15
 -- Версия PHP: 7.3.2
 
@@ -25,6 +25,28 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Структура таблицы `messages`
+--
+
+CREATE TABLE `messages` (
+  `id_send` int(11) NOT NULL,
+  `sender_name` varchar(40) NOT NULL,
+  `sender_mail` varchar(55) NOT NULL,
+  `sender_text` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `messages`
+--
+
+INSERT INTO `messages` (`id_send`, `sender_name`, `sender_mail`, `sender_text`) VALUES
+(1, 'Человек', 'human@hrgre.com', 'Привет'),
+(2, 'Человек', 'human@hrgre.com', 'Привет'),
+(3, 'dadawd', 'dadawddaw@dawdawd.ru', 'dcvcvcxv');
+
+-- --------------------------------------------------------
+
+--
 -- Структура таблицы `posts`
 --
 
@@ -41,7 +63,12 @@ CREATE TABLE `posts` (
 
 INSERT INTO `posts` (`id_post`, `post_title`, `post_tags`, `post_text`) VALUES
 (1, 'dawdwad', 'fewfwefew', 'fwefegvxvcxv'),
-(3, 'gewfewfew', 'gewfewvxcvxcvxc', 'sfewt');
+(3, 'gewfewfew', 'gewfewvxcvxcvxc', 'sfewt'),
+(4, 'dawdawdawdsacawcwaczxc', 'даддаад', '21334243252'),
+(5, 'Сервер 3000', 'новости, сервер, тупичок ', 'Третьего дня, при помощи проверенных камрадов, в кабинете под номером 406 появился новый мегадевайс - \"Сервер 3000\". Сразу же, задыхаясь от жадности, вскрыл сервер цепкими лапами, и заюзал данный мегадевайс. Конфиг - моё почтение. Настоящей глыбой был сервер в далёком 2003 году. Поставив на него Windows Server, провозился с ним весь день. С Linux не идёт ни в какое сравнение. Девайс отличный, рекомендую к приобретению. Всё это как водится, реклама. '),
+(6, 'Lorem ipsum dolor sit amet', 'lorem, ipsum, dolor ', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi debitis ipsam quo rerum laborum exercitationem cum. Numquam cupiditate, maiores aspernatur repudiandae ullam molestias harum, mollitia pariatur sequi minima, ad praesentium! '),
+(7, 'ПОСТ', 'ПОСТ', 'dawdawd'),
+(8, 'dad', 'vbgfbfbgfbgf', 'rhgrehre');
 
 -- --------------------------------------------------------
 
@@ -66,6 +93,12 @@ INSERT INTO `user` (`login`, `password`) VALUES
 --
 
 --
+-- Индексы таблицы `messages`
+--
+ALTER TABLE `messages`
+  ADD PRIMARY KEY (`id_send`);
+
+--
 -- Индексы таблицы `posts`
 --
 ALTER TABLE `posts`
@@ -76,10 +109,16 @@ ALTER TABLE `posts`
 --
 
 --
+-- AUTO_INCREMENT для таблицы `messages`
+--
+ALTER TABLE `messages`
+  MODIFY `id_send` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT для таблицы `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id_post` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_post` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

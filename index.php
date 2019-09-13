@@ -6,12 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новости</title>
+    <title>Обо мне</title>
     <link rel="stylesheet" href="./css/index.css">
-    <style>
-        header { min-height: unset; }
-        header #content .text h1 { text-align: center; }
-    </style>
 </head>
 
 <body>
@@ -28,17 +24,38 @@
                 </div>
 
                 <div class="text">
-                    <h1>Новостой блог</h1>
+                    <h1>Овчинников Антон Викторович</h1>
+                    <p>Какой преподаватель чего кто</p>
                 </div>
             </div>
         </header>
+
+        <div id="block_one">
+            <div id="content">
+                <h2>Повышение квалификации/проф. подготовка</h2>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="block_two">
+            <div id="content">
+                <img src="./img/temp_bumaga.jpg" alt="certificate" title="За то-то" class="item">
+                <img src="./img/temp_bumaga.jpg" alt="certificate" title="За это" class="item">
+                <img src="./img/temp_bumaga.jpg" alt="certificate" title="За и за то" class="item">
+                <img src="./img/temp_bumaga.jpg" alt="certificate" title="За за вот это" class="item">
+            </div>
+        </div>
 
         <div id="block_three">
             <div id="content">
                 <h2>Новости / блог / буквы</h2> 
                 <div class="posts">
                 <?
-                    $query = "SELECT * FROM posts ORDER BY id_post DESC";
+                    $query = "SELECT * FROM posts ORDER BY id_post DESC LIMIT 3";
                     $queryResult = mysqli_query($link, $query);
                     
                     while ($post = mysqli_fetch_assoc($queryResult))
@@ -58,6 +75,7 @@
                     }
                     ?>
                 </div>
+                <a href="./news.php">ПОСМОТРЕТЬ ВСЕ НОВОСТИ</a>
             </div>
         </div>
 
