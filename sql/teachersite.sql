@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Сен 13 2019 г., 09:47
+-- Время создания: Сен 13 2019 г., 12:58
 -- Версия сервера: 8.0.15
 -- Версия PHP: 7.3.2
 
@@ -65,10 +65,12 @@ INSERT INTO `posts` (`id_post`, `post_title`, `post_tags`, `post_text`) VALUES
 (1, 'dawdwad', 'fewfwefew', 'fwefegvxvcxv'),
 (3, 'gewfewfew', 'gewfewvxcvxcvxc', 'sfewt'),
 (4, 'dawdawdawdsacawcwaczxc', 'даддаад', '21334243252'),
-(5, 'Сервер 3000', 'новости, сервер, тупичок ', 'Третьего дня, при помощи проверенных камрадов, в кабинете под номером 406 появился новый мегадевайс - \"Сервер 3000\". Сразу же, задыхаясь от жадности, вскрыл сервер цепкими лапами, и заюзал данный мегадевайс. Конфиг - моё почтение. Настоящей глыбой был сервер в далёком 2003 году. Поставив на него Windows Server, провозился с ним весь день. С Linux не идёт ни в какое сравнение. Девайс отличный, рекомендую к приобретению. Всё это как водится, реклама. '),
 (6, 'Lorem ipsum dolor sit amet', 'lorem, ipsum, dolor ', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi debitis ipsam quo rerum laborum exercitationem cum. Numquam cupiditate, maiores aspernatur repudiandae ullam molestias harum, mollitia pariatur sequi minima, ad praesentium! '),
 (7, 'ПОСТ', 'ПОСТ', 'dawdawd'),
-(8, 'dad', 'vbgfbfbgfbgf', 'rhgrehre');
+(8, 'dad', 'vbgfbfbgfbgf', 'rhgrehre'),
+(9, 'fewfewg', 'regrehrehre', 'hbgbgf'),
+(10, '1', '2', '3'),
+(99, 'Сервер 3000', 'новости, сервер, тупичок ', 'Третьего дня, при помощи проверенных камрадов, в кабинете под номером 406 появился новый мегадевайс - \"Сервер 3000\". Сразу же, задыхаясь от жадности, вскрыл сервер цепкими лапами, и заюзал данный мегадевайс. Конфиг - моё почтение. Настоящей глыбой был сервер в далёком 2003 году. Поставив на него Windows Server, провозился с ним весь день. С Linux не идёт ни в какое сравнение. Девайс отличный, рекомендую к приобретению. Всё это как водится, реклама. ');
 
 -- --------------------------------------------------------
 
@@ -118,7 +120,7 @@ ALTER TABLE `messages`
 -- AUTO_INCREMENT для таблицы `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id_post` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_post` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

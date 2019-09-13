@@ -52,7 +52,13 @@
                         <hr>
                         <p class="post_text"> <? echo $postText ?> </p>
                         <hr>
-                        <p class="post_tags"> <? echo $postTags ?> </p> 
+                        <?
+                            $tags = explode(', ', $postTags);
+                            foreach ($tags as &$value) 
+                            {
+                                echo '<p class="post_tags"> '.$value.'</p>'; 
+                            }
+                        ?>  
                     </div>
                     <?
                     }
