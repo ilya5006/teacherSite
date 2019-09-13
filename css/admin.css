@@ -1,46 +1,97 @@
 *
 {
-    margin: 0px;
-    padding: 0px;
-    font-family: "Rubik", sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-header
+html,
+body
 {
-    background-color: #d0d0d0;
-    width: 100%;
+    min-height: 100%;
 }
 
-header a
+html
 {
-    float: left;
-    height: 100%;
+    display: flex;
+
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+body
+{
+    font-family: 'Rubik', sans-serif;
+
+    display: flex;
+
+    padding: 50px 0;
+
+    background-image: url('../img/background_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 header h1
 {
-    padding: 10px;
+    font-size: 56px;
     font-size: 50px;
 
+    padding: 10px;
+
     text-align: center;
+
+    color: #fff;
 }
 
 .function
 {
-    display: block;
+    font-size: 40px;
+
+    min-width: 300px;
+    margin: 15px;
+    padding: 25px 50px;
+
+    cursor: pointer;
+    transition: .3s all;
     text-align: center;
-    background-color: #d2b9b9; 
     text-decoration: none;
 
-    border-bottom: 1px solid black;
-    padding: 100px;
-    font-size: 30px;
-    transition: 1s;
+    color: white;
+    border: 0;
+    border: 0;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
 }
 
-a:hover
+.function:hover
 {
-    transition: 1s;
-    background-color: #db6c6c;
+    transform: scale(1.05);
+
+    background-color: rgba(255,255,255,.3);
+    box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+}
+
+@media screen and (max-width: 485px)
+{
+    header h1
+    {
+        font-size: 10vw;
+    }
+    .function
+    {
+        font-size: 18px;
+
+        width: 90%;
+    }
+    body
+    {
+        width: 100%;
+    }
 }
