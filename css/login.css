@@ -1,0 +1,36 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="input"]
+{
+    height: 80px;
+    width: 500px;
+    padding: 20px;
+    font-size: 40px;
+}
+
+input[type="submit"]
+{
+    height: 80px;
+}
