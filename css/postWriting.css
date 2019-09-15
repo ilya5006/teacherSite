@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
 
 *
 {
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
 
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-html,
-body
+html, body
 {
     min-height: 100vh;
 }
@@ -18,27 +17,29 @@ body
 html
 {
     display: flex;
+
     width: 100%;
+
+    align-items: center;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
 }
 
 body
 {
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
 
     display: flex;
 
     padding: 50px 0;
 
-    background-image: url('../img/background_1.jpg');
+    background-image: url("../img/background_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
+    align-items: center;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
 }
 
 form
@@ -46,21 +47,18 @@ form
     display: flex;
     flex-direction: column;
 
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-input,
-textarea
+input, textarea
 {
     font-size: 25px;
 
     padding: 5px;
 }
 
-input[type='input'],
-input[type='submit'],
-textarea
+input[type="input"], input[type="submit"], textarea
 {
     font-size: 36px;
 
@@ -71,45 +69,46 @@ textarea
     margin: 15px;
     padding: 20px;
 
-    transition: .3s all;
+    transition: 0.3s all;
     text-align: center;
 
     color: white;
     border: 0;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #FFFFFF;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: rgba(255,255,255,.0);
+    background-color: rgba(255,255,255,0.0);
 }
 
 textarea
 {
-	resize: vertical;
-	min-height: 150px;
+    min-height: 150px;
+
+    resize: vertical;
 }
 
-input[type='input']:hover, textarea:hover
+input[type="input"]:hover, textarea:hover
 {
-    background-color: rgba(255,255,255,.2);
-    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-input[type='submit']
+input[type="submit"]
 {
     cursor: pointer;
 
     border: 0;
     border-radius: 15px;
-    background-color: rgba(255,255,255,.2);
-    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-input[type='submit']:hover
+input[type="submit"]:hover
 {
     transform: scale(1.05);
 
-    background-color: rgba(255,255,255,.3);
-    box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+    background-color: rgba(255,255,255,0.3);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 a
@@ -121,35 +120,33 @@ a
     padding: 25px 50px;
 
     cursor: pointer;
-    transition: .3s all;
+    transition: 0.3s all;
     text-align: center;
     text-decoration: none;
 
     color: white;
     border: 0;
     border-radius: 15px;
-    background-color: rgba(255,255,255,.2);
-    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 a:hover
 {
     transform: scale(1.05);
 
-    background-color: rgba(255,255,255,.3);
-    box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+    background-color: rgba(255,255,255,0.3);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 @media screen and (max-width: 485px)
 {
-    input[type='input'],
-    input[type='submit'],
-    textarea,
-    a
+    input[type="input"], input[type="submit"], textarea, a
     {
         font-size: 28px;
-       	min-height: 70px;
+
         width: 90%;
+        min-height: 70px;
     }
     form
     {

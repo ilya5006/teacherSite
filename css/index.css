@@ -22,7 +22,7 @@ body
 }
 
 
-#content
+.content
 {
     max-width: 1440px;
     margin: 0 auto;
@@ -43,13 +43,13 @@ header
     background-size: cover;
 }
 
-header #content
+header .content
 {
     display: flex;
 
     flex-flow: column nowrap;
 }
-header #content .nav
+header .content .nav
 {
     display: flex;
 
@@ -57,7 +57,7 @@ header #content .nav
     justify-content: space-between;
 }
 
-header #content .nav .logo
+header .content .nav .logo
 {
     margin-bottom: 25px;
 
@@ -65,13 +65,13 @@ header #content .nav .logo
     text-transform: uppercase;
 }
 
-header #content .nav .logo:hover
+header .content .nav .logo:hover
 {
     transform: scale(1.05);
 }
 
-header #content .nav a,
-footer #content a
+header .content .nav a,
+footer .content a
 {
     font-weight: bold;
 
@@ -82,8 +82,8 @@ footer #content a
     color: #fff;;
 }
 
-header #content .nav a:not(.logo)::after,
-footer #content a::after
+header .content .nav a:not(.logo)::after,
+footer .content a::after
 {
     position: absolute;
     bottom: 0;
@@ -100,13 +100,13 @@ footer #content a::after
     box-shadow: 1px 1px 0 rgba(0, 0, 0, .7);
 }
 
-header #content .nav a:hover::after,
-footer #content a:hover::after
+header .content .nav a:hover::after,
+footer .content a:hover::after
 {
     transform: scale(1);
 }
 
-header #content .nav ul
+header .content .nav ul
 {
     display: flex;
 
@@ -115,7 +115,7 @@ header #content .nav ul
     flex-flow: row nowrap;
 }
 
-header #content .nav ul li a
+header .content .nav ul li a
 {
     margin: 0 15px;
     padding: 5px 15px;
@@ -123,7 +123,7 @@ header #content .nav ul li a
     text-align: center;
 }
 
-header #content .text
+header .content .text
 {
     display: flex;
 
@@ -136,27 +136,27 @@ header #content .text
     justify-content: center;
 }
 
-header #content .text h1
+header .content .text h1
 {
     font-size: 66px;
 }
 
-header #content .text p
+header .content .text p
 {
     font-size: 26px;
 }
 
-header #content .nav ul li a,
-header #content .nav .logo,
-header #content .text h1,
-header #content .text p,
-footer #content a,
-footer #content p
+header .content .nav ul li a,
+header .content .nav .logo,
+header .content .text h1,
+header .content .text p,
+footer .content a,
+footer .content p
 {
     text-shadow: 1px 1px 0 rgba(0, 0, 0, .7);
 }
 
-#block_one #content
+#block_one .content
 {
     display: flex;
 
@@ -165,12 +165,12 @@ footer #content p
     justify-content: center;
 }
 
-#block_one #content ul
+#block_one .content ul
 {
     margin-left: 35px;
 }
 
-#block_one #content h2
+#block_one .content h2
 {
     font-size: 58px;
 
@@ -179,7 +179,7 @@ footer #content p
     text-align: center;
 }
 
-#block_one #content ul li
+#block_one .content ul li
 {
     font-size: 28px;
 
@@ -194,7 +194,7 @@ footer #content p
     background-size: cover;
 }
 
-#block_two #content
+#block_two .content
 {
     display: flex;
 
@@ -203,7 +203,7 @@ footer #content p
     justify-content: center;
 }
 
-#block_two #content .item
+#block_two .content .item
 {
     width: 155px;
     margin: 1%;
@@ -216,7 +216,7 @@ footer #content p
     flex-grow: 1;
 }
 
-#block_three #content
+#block_three .content
 {
     display: flex;
 
@@ -224,7 +224,7 @@ footer #content p
     flex-flow: column nowrap;
     justify-content: center;
 }
-#block_three #content h2
+#block_three .content h2
 {
     font-size: 58px;
 
@@ -233,7 +233,7 @@ footer #content p
     text-align: center;
 }
 
-#block_three #content .posts
+#block_three .content .posts
 {
     display: flex;
 
@@ -242,7 +242,7 @@ footer #content p
     justify-content: center;
 }
 
-#block_three #content .post
+#block_three .content .post
 {
     width: 300px;
     margin: 25px;
@@ -254,7 +254,7 @@ footer #content p
     flex-grow: 1;
 }
 
-#block_three #content .post .post_title
+#block_three .content .post .post_title
 {
     font-size: 18px;
     font-weight: bold;
@@ -264,14 +264,14 @@ footer #content p
     text-align: center;
 }
 
-#block_three #content .post .post_text
+#block_three .content .post .post_text
 {
     font-size: 16px;
 
     margin: 10px 0;
 }
 
-#block_three #content .post .post_tags
+#block_three .content .post .post_tags
 {
     font-size: 14px;
 
@@ -285,12 +285,12 @@ footer #content p
     border: 1px solid black;
 }
 
-#block_three #content .post hr
+#block_three .content .post hr
 {
     opacity: .3;
 }
 
-#block_three #content a
+#block_three .content a
 {
     font-size: 18px;
     text-align: center;
@@ -308,7 +308,7 @@ footer #content p
     box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
 }
 
-#block_three #content a:hover
+#block_three .content a:hover
 {
     transform: scale(1.05);
 
@@ -322,7 +322,7 @@ footer
     background-size: cover;
 }
 
-footer #content
+footer .content
 {
     display: flex;
 
@@ -332,20 +332,20 @@ footer #content
     flex-flow: row wrap;
     justify-content: space-between;
 }
-footer #content a,
-footer #content p
+footer .content a,
+footer .content p
 {
     text-align: center;
 
     color: #fff;
 }
 
-footer #content p
+footer .content p
 {
     opacity: .4;
 }
 
-footer #content a
+footer .content a
 {
     position: relative;
 
@@ -355,24 +355,24 @@ footer #content a
 
 @media screen and (max-width: 700px)
 {
-    #content
+    .content
     {
         padding: 45px 25px;
     }
 
-    header #content .nav p
+    header .content .nav p
     {
         margin-bottom: 25px;
     }
 
-    header #content .nav
+    header .content .nav
     {
         align-items: center;
         flex-flow: column nowrap;
         justify-content: center;
     }
 
-    header #content .nav ul li
+    header .content .nav ul li
     {
         display: flex;
 
@@ -380,33 +380,33 @@ footer #content a
         flex-grow: 1;
         justify-content: center;
     }
-    header #content .nav ul li a
+    header .content .nav ul li a
     {
         margin: unset;
     }
-    header #content .text h1,
-    header #content .text p
+    header .content .text h1,
+    header .content .text p
     {
         text-align: center;
     }
-    header #content .text h1
+    header .content .text h1
     {
         font-size: 43px;
     }
-    #block_one #content h2
+    #block_one .content h2
     {
         font-size: 38px;
     }
-    #block_one #content ul li
+    #block_one .content ul li
     {
         font-size: 23px;
     }
 
-    #block_three #content
+    #block_three .content
     {
         padding: 45px 15px;
     }
-    #block_three #content .post
+    #block_three .content .post
     {
         width: 100%;
         margin: 5px;
@@ -415,7 +415,7 @@ footer #content a
 
 @media screen and (max-width: 485px)
 {
-    footer #content
+    footer .content
     {
         flex-flow: column nowrap;
     }

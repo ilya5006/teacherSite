@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="./css/index.css">
     <style>
         header { min-height: unset; }
-        header #content .text h1 { text-align: center; }
+        header .content .text h1 { text-align: center; }
     </style>
 </head>
 
 <body>
     <div id="wrapper">
         <header>
-            <div id="content">
+            <div class="content">
                 <div class="nav">
                     <a href="index.php" class="logo">Овчинников</a>
                     <ul>
@@ -34,7 +34,7 @@
         </header>
 
         <div id="block_three">
-            <div id="content">
+            <div class="content">
                 <h2>Новости / блог / буквы</h2> 
                 <div class="posts">
                 <?
@@ -68,7 +68,7 @@
         </div>
 
         <footer>
-            <div id="content">
+            <div class="content">
                 <p>КОПИРАЙТ </p>
                 <a href="./contact.html">КОНТАКТЫ</a>
             </div>

@@ -13,7 +13,7 @@
 <body>
     <div id="wrapper">
         <header>
-            <div id="content">
+            <div class="content">
                 <div class="nav">
                     <a href="index.php" class="logo">Овчинников</a>
                     <ul>
@@ -31,7 +31,7 @@
         </header>
 
         <div id="block_one">
-            <div id="content">
+            <div class="content">
                 <h2>Повышение квалификации/проф. подготовка</h2>
                 <ul>
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
@@ -42,7 +42,7 @@
         </div>
 
         <div id="block_two">
-            <div id="content">
+            <div class="content">
                 <img src="./img/temp_bumaga.jpg" alt="certificate" title="За то-то" class="item">
                 <img src="./img/temp_bumaga.jpg" alt="certificate" title="За это" class="item">
                 <img src="./img/temp_bumaga.jpg" alt="certificate" title="За и за то" class="item">
@@ -51,7 +51,7 @@
         </div>
 
         <div id="block_three">
-            <div id="content">
+            <div class="content">
                 <h2>Новости / блог / буквы</h2> 
                 <div class="posts">
                 <?
@@ -86,7 +86,7 @@
         </div>
 
         <footer>
-            <div id="content">
+            <div class="content">
                 <p>КОПИРАЙТ </p>
                 <a href="./contact.html">КОНТАКТЫ</a>
             </div>
