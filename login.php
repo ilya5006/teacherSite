@@ -31,8 +31,8 @@
 </head>
 <body>
     <form action="" method="POST">
-        <input type="input" name="login" placeholder="Логин">
-        <input type="input" name="password" placeholder="Пароль">
+        <input type="text" name="login" placeholder="Логин">
+        <input type="text" name="password" placeholder="Пароль">
         <input type="submit" name="submit" value="ВОЙТИ">
     </form>
 </body>
