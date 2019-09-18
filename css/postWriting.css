@@ -58,7 +58,7 @@ input, textarea
     padding: 5px;
 }
 
-input[type="input"], input[type="submit"], textarea
+input[type="text"], input[type="submit"], textarea
 {
     font-size: 36px;
 
@@ -87,7 +87,7 @@ textarea
     resize: vertical;
 }
 
-input[type="input"]:hover, textarea:hover
+input[type="text"]:hover, textarea:hover
 {
     background-color: rgba(255,255,255,0.2);
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -141,7 +141,7 @@ a:hover
 
 @media screen and (max-width: 485px)
 {
-    input[type="input"], input[type="submit"], textarea, a
+    input[type="text"], input[type="submit"], textarea, a
     {
         font-size: 28px;
 
