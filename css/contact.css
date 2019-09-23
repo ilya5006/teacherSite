@@ -179,14 +179,14 @@ header .content ul li a, header .content .logo, header .content .text h1, header
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-#contact .content form input[type=submit]:hover
+#contact .content form input[type=submit]:hover, #contact .content form input[type=submit]:focus
 {
     transform: scale(1.05);
 
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-#contact .content form input:hover, #contact .content form textarea:hover
+#contact .content form input:hover, #contact .content form textarea:hover, #contact .content form input:focus, #contact .content form textarea:focus
 {
     background-color: rgba(255,255,255,0.2);
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
