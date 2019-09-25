@@ -70,11 +70,11 @@ else
                             $tags = explode(', ', $postTags);
                             foreach ($tags as &$value) 
                             {
-                                if (isset($_GET['tag']))
-                                {
-                                    echo '<a class="post_tag" href="./news.php"> Показать все </a>'; 
-                                }
                                 echo '<a class="post_tag" href="./news.php?tag='.$value.'"> '.$value.'</a>'; 
+                            }
+                            if (isset($_GET['tag']))
+                            {
+                                echo '<a class="post_tag" href="./news.php"> Показать все новости </a>'; 
                             }
                         ?> 
                         </div>
