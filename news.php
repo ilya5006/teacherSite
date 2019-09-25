@@ -1,4 +1,16 @@
-<? require_once './php/connection.php'; ?>
+<?
+require_once './php/connection.php'; 
+
+if (isset($_GET['tag']))
+{ 
+    $tag = $_GET['tag'];
+}
+else
+{
+    $tag = '';
+}
+
+?>
 
 <!DOCTYPE html>
 <html lang="ru">
@@ -8,6 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новости</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/news.css">
     <style>
         header { min-height: unset; }
         header .content .text h1 { text-align: center; }
@@ -38,9 +51,9 @@
                 <h2>Новости / блог / буквы</h2> 
                 <div class="posts">
                 <?
-                    $query = "SELECT * FROM posts ORDER BY id_post DESC";
+                    $query = "SELECT * FROM posts WHERE post_tags LIKE '%".$tag."%' ORDER BY id_post DESC";
                     $queryResult = mysqli_query($link, $query);
-                    
+
                     while ($post = mysqli_fetch_assoc($queryResult))
                     {
                         $postTitle = $post['post_title'];
@@ -52,13 +65,19 @@
                         <hr>
                         <p class="post_text"> <? echo $postText ?> </p>
                         <hr>
+                        <div class="post_tags">
                         <?
                             $tags = explode(', ', $postTags);
                             foreach ($tags as &$value) 
                             {
-                                echo '<p class="post_tags"> '.$value.'</p>'; 
+                                if (isset($_GET['tag']))
+                                {
+                                    echo '<a class="post_tag" href="./news.php"> Показать все </a>'; 
+                                }
+                                echo '<a class="post_tag" href="./news.php?tag='.$value.'"> '.$value.'</a>'; 
                             }
-                        ?>  
+                        ?> 
+                        </div>
                     </div>
                     <?
                     }

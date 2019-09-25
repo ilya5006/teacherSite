@@ -69,13 +69,15 @@
                         <hr>
                         <p class="post_text"> <? echo $postText ?> </p>
                         <hr>
+                        <div class="post_tags">
                         <?
                             $tags = explode(', ', $postTags);
                             foreach ($tags as &$value) 
                             {
-                                echo '<p class="post_tags"> '.$value.'</p>'; 
+                                echo '<a class="post_tag" href="./news.php?tag='.$value.'"> '.$value.'</a>'; 
                             }
                         ?> 
+                        </div>
                     </div>
                     <?
                     }

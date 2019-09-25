@@ -9,10 +9,28 @@
     padding: 0;
 }
 
-#post
+#block_three
 {
-    width: 80%;
-    margin: 0 auto;
+    flex-grow: 1;
+}
 
-    border: 1px solid black;
+#block_three .content .posts
+{
+    width: unset;
+
+    flex-flow: column nowrap;
+}
+
+#block_three .content .post
+{
+    width: 800px;
+}
+
+@media screen and (max-width: 920px)
+{
+    #block_three .content .post
+    {
+        width: 100%;
+        margin: 5px;
+    }
 }
