@@ -310,6 +310,11 @@ header .content ul li a, header .content .logo, header .content .text h1, header
     transform: scale(1);
 }
 
+#contact .content form input::placeholder, #contact .content form textarea::placeholder
+{
+    color: rgb(255, 255, 255, 0.5);
+}
+
 @media screen and (max-width: 700px)
 {
     .content
