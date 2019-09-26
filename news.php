@@ -25,6 +25,7 @@ else
         header { min-height: unset; }
         header .content .text h1 { text-align: center; }
     </style>
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body>
@@ -37,6 +38,7 @@ else
                         <li><a href="index.php">Обо мне</a></li>
                         <li><a href="news.php">Блог</a></li>
                         <li><a href="contact.html">Контакты</a></li>
+                        <li><a class="eyes"></a></li>
                     </ul>
                 </div>
 

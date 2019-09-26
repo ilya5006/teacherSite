@@ -1,0 +1,36 @@
+*:not(.eyes)
+{
+    color: #FFFFFF !important;
+    background-color: #000000 !important;
+    opacity: 1 !important;
+}
+
+img
+{
+    display: none !important;
+}
+
+h1,h2,h3, p, a
+{
+    text-align: center !important;
+}
+
+#block_three .content .post, #block_three .content .post .post_title, #block_three .content .post .post_text, .post_tags
+{
+    background-color: #2c2c2c !important;
+}
+
+#block_three .content a
+{
+    background-color: #4b4b4b !important;
+}
+
+#contact .content form input[type="submit"]
+{
+    background-color: #2c2c2c !important;
+}
+
+input::placeholder, textarea::placeholder
+{
+    color: #FFFFFF !important;
+}

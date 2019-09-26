@@ -80,7 +80,7 @@ header .content a:not(.logo)::after
     box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
 }
 
-header .content a:hover::after
+header .content a:not(.eyes):hover::after
 {
     transform: scale(1);
 }
@@ -88,7 +88,7 @@ header .content a:hover::after
 header .content ul
 {
     display: flex;
-
+    justify-content: center;
     list-style-type: none;
 
     flex-flow: row nowrap;
@@ -370,5 +370,35 @@ header .content ul li a, header .content .logo, header .content .text h1, header
     #contact .content form p, #contact .content form input, #contact .content form textarea
     {
         width: 100%;
+    }
+}
+
+.eyes
+{
+    cursor: pointer;
+    background-image: url("./../img/eye.svg");
+    filter: invert(1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .content ul li:last-child
+{
+    display: unset;
+}
+
+@media screen and (max-width: 430px)
+{
+    header .content ul
+    {
+        flex-flow: row wrap;
+    }
+    header .content ul li:last-child
+    {
+         margin: 15px;
+    }
+    header .content ul li:last-child
+    {
+        flex-grow: 0;
     }
 }

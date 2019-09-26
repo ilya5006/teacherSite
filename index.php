@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Обо мне</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body>
@@ -20,6 +21,7 @@
                         <li><a href="index.php">Обо мне</a></li>
                         <li><a href="news.php">Блог</a></li>
                         <li><a href="contact.html">Контакты</a></li>
+                        <li><a class="eyes"></a></li>
                     </ul>
                 </div>
 

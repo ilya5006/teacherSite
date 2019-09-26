@@ -111,7 +111,7 @@ header .content .nav a:not(.logo)::after, footer .content a::after
     box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
 }
 
-header .content .nav a:hover::after, footer .content a:hover::after
+header .content .nav a:not(.eyes):hover::after, footer .content a:hover::after
 {
     transform: scale(1);
 }
@@ -119,7 +119,7 @@ header .content .nav a:hover::after, footer .content a:hover::after
 header .content .nav ul
 {
     display: flex;
-
+    justify-content: center;
     list-style-type: none;
 
     flex-flow: row nowrap;
@@ -451,5 +451,35 @@ footer .content a
     footer .content p
     {
         margin-top: 15px;
+    }
+}
+
+.eyes
+{
+    cursor: pointer;
+    background-image: url("./../img/eye.svg");
+    filter: invert(1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .content .nav ul li:last-child
+{
+    display: unset;
+}
+
+@media screen and (max-width: 430px)
+{
+    header .content .nav ul
+    {
+        flex-flow: row wrap;
+    }
+    header .content .nav ul li:last-child
+    {
+         margin: 15px;
+    }
+    header .content .nav ul li:last-child
+    {
+        flex-grow: 0;
     }
 }
